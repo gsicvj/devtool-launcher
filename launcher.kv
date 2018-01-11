@@ -1,0 +1,26 @@
+<CustButton@Button>:
+	font_size: 24
+	
+<CustLabel@Label>:
+	font_size: 32
+
+<LauncherGridLayout>:
+	id: launcher
+	display: entry
+	rows: 3
+	spacing: 10
+	padding: 10
+				
+	BoxLayout:
+		CustLabel:
+			text: "Dev Tools Launcher v1.0"
+			
+	BoxLayout:
+		id: layout_tools
+		spacing: 10
+					
+	BoxLayout:
+		TextInput:
+			id: entry
+			text: launcher.app_console
+			font_size: 18
